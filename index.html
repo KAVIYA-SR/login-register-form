@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>login/register page</title>
         <meta charset="UTF-8">
@@ -9,48 +10,56 @@
     <body>
         <div class="container">
             <div class="forms-container">
+                <!-- <p id="res">result</p> -->
                 <div class="signin-signup">
-                    <form action="" class="sign-in">
+                    <form class="sign-in">
                         <h1 class="title">Sign in</h1>
                         <div class="input">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="User Name">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input id="m1" type="email" placeholder="Email">
+                            <span id="errm1"></span>
                         </div>
                         <div class="input">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Password">
+                            <input type="password" id="p1" placeholder="Password">
+                            <span id="errp1"></span>
                         </div>
-                        <input type="submit" class="submit" value="login">
-                        <p class="social-text">Or SignIn with social platforms</p>
+                        <input type="button" id="in" class="submit" value="login">
+                        <!-- <p class="social-text">Or SignIn with social platforms</p>
                         <div class="socialmedia">
                             <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
                             <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
                             <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
+                        </div> -->
+                        <p id="signin-res"></p>
                     </form>
-                    <form action="" class="sign-up">
+                    <form class="sign-up">
                         <h1 class="title">Sign up</h1>
                         <div class="input">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder=" User Name">
+                            <input type="text" id="n2" placeholder=" User Name">
+                            <span id="errn2"></span>
                         </div>
                         <div class="input">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder=" Email">
+                            <input type="email" id="m2" placeholder=" Email">
+                            <span id="errm2"></span>
                         </div>
                         <div class="input">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder=" Password">
+                            <input type="password" id="p2" placeholder=" Password">
+                            <span id="errp2"></span>
                         </div>
-                        <input type="submit" class="submit" value="sign up">
-                        <p class="social-text">Or SignIn with social platforms</p>
-                        <div class="socialmedia">
-                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <input type="button" id="up" class="submit" value="sign up">
+                        <!-- <p class="social-text">Or SignIn with social platforms</p>
+                            <div class="socialmedia">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
                             <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
                             <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
+                        </div> -->
+                        <p id="signup-res"></p>
                     </form>
                 </div>
             </div>
